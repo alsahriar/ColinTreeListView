@@ -376,9 +376,9 @@ public class ColinTreeListView extends AndroidNonvisibleComponent implements Com
 
 
     @SimpleEvent
-    public void ElementClick(int elementIndex) {
-        lastClickedElement = elementIndex + 1;
-        EventDispatcher.dispatchEvent(this, "ElementClick", elementIndex + 1);
+    public void TitleClick(int title) {
+        lastClickedTitle = title + 1;
+        EventDispatcher.dispatchEvent(this, "TitleClick", title + 1);
     }
     @SimpleEvent
     public boolean ElementLongClick(int elementIndex) {
